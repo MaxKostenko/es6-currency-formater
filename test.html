@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link type="text/css" href="./libs/mocha.css" rel="stylesheet" />
+	<script type="text/javascript" src="./libs/mocha.js"></script>
+	<script type="text/javascript" src="./libs/chai.js"></script>
+	<script src="./Currency.js"></script>
+	<script src="./currency-format-test.js"></script>
+	<script src="./currency-format-settings-test.js"></script>
+</head>
+<body>
+	<div id="mocha"></div>
+	<script>
+		mocha.setup('bdd');
+		currencyFormatTest();
+		currencyFormatSettingsTest();
+		mocha.run();
+	</script>
+</body>
+</html>
